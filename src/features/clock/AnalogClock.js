@@ -58,6 +58,9 @@ export function AnalogClock() {
     const handleHourClose = () => {
         setOpenHour(false)
     }
+
+    const errorHours = currentAnalogHour > 23;
+    const errorMinutes = currentAnalogMinutes > 60;
     
     return (
         <div className={classes.analog}>
@@ -68,13 +71,18 @@ export function AnalogClock() {
                     <TextField
                         aria-label="Set hour on analog clock"
                         defaultValue={currentAnalogHour}
-                        onChange={e => dispatch(setHour(e.target.value))}/>
+                        onChange={e => dispatch(setHour(e.target.value))}
+                        helperText={errorHours ? "Hours must be between 00 and 23" : ""}
+                        error={errorHours}
+                        />
                 </Dialog>
                 <Dialog open={openMinutes} onClose={handleMinutesClose} >
                     <TextField
                         aria-label="Set minutes on analog clock"
                         defaultValue={currentAnalogMinutes}
-                        onChange={e => dispatch(setMinutes(e.target.value))}/>
+                        onChange={e => dispatch(setMinutes(e.target.value))}
+                        helperText={errorMinutes ? "Minutes must be between 00 and 60" : ""}
+                        error={errorMinutes}/>
                 </Dialog>
             </div>
         </div>
