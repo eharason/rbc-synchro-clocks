@@ -1,5 +1,7 @@
 ## Problem 2: Synchronized Clocks
 
+You can view the hosted solution here: https://eharason.github.io/synchronized-clocks/
+
 - [x] Create two synchronized clocks using <span style="color:red">React</span>
 - [x] There should be the ability to adjust each clock's time.
 - [x] When the time on one clock is adjusted, the time on the other clock should be automatically synchronized.
