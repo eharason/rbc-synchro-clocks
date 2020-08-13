@@ -62,8 +62,8 @@ export function AnalogClock() {
     return (
         <div className={classes.analog}>
             <div className={classes.analogHands}>
-                <div className={`${classes.dial} minutes`} style={minutesStyle} onClick={handleMinutesOpen} />
-                <div className={`${classes.dial} hours`} style={hoursStyle} onClick={handleHourOpen} />
+                <div title={"minute hand"} className={`${classes.dial} minutes`} style={minutesStyle} onClick={handleMinutesOpen} />
+                <div title={"hour hand"} className={`${classes.dial} hours`} style={hoursStyle} onClick={handleHourOpen} />
                 <Dialog open={openHour} onClose={handleHourClose} >
                     <TextField
                         aria-label="Set hour on analog clock"

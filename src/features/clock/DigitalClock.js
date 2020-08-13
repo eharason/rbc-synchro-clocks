@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { TextField, makeStyles } from '@material-ui/core';
 import { setHour, setMinutes, selectHour, selectMinutes } from './clockSlice'
@@ -36,6 +36,16 @@ export function DigitalClock() {
     const currentHour = useSelector(selectHour);
     const currentMinutes = useSelector(selectMinutes);
 
+    const [seconds, setSeconds] = useState((new Date().getSeconds()<10?'0':'') + new Date().getSeconds());
+    const renderSeconds = () => {
+        return (new Date().getSeconds()<10?'0':'') + new Date().getSeconds();
+    };
+    useEffect(() => {
+        setTimeout(() => {
+            setSeconds(renderSeconds());
+        }, 1000);
+    });
+
     const dispatch = useDispatch();
 
     const errorHours = currentHour > 23;
@@ -64,6 +74,8 @@ export function DigitalClock() {
                     className: classes.digitalNumbers
                 }}
             />
+            <div className={classes.digitalColon}>:</div>
+            <div className={classes.digitalNumbers}>{seconds}</div>
         </div>
     )
 }

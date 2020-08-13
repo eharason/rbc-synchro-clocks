@@ -1,9 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import configureStore from 'redux-mock-store';
 import App from './App';
-import clock, { setHour, setMinutes } from './features/clock/clockSlice';
+import clock, { setHour, setMinutes } from './features/clock/clockSlice'
 
 describe('clock reducer', () => {
   it('should handle initial state', () => {
@@ -17,14 +18,14 @@ describe('clock reducer', () => {
     const hourInput = 23;
     expect(
       setHour(hourInput)
-    ).toEqual({"payload": hourInput, "type": "clock/setHour"})
+    ).toEqual({ "payload": hourInput, "type": "clock/setHour" })
   })
 
   it('should update minutes value', () => {
     const minutesInput = 14;
     expect(
       setMinutes(minutesInput)
-    ).toEqual({"payload": minutesInput, "type": "clock/setMinutes"})
+    ).toEqual({ "payload": minutesInput, "type": "clock/setMinutes" })
   })
 })
 
@@ -33,34 +34,33 @@ const mockStore = configureStore([]);
 describe('digital and analog times', () => {
   let store;
   let component;
- 
+
   beforeEach(() => {
     store = mockStore({
-      hour: 12,
-      minutes: 22
+      clock: {
+        hour: 12,
+        minutes: 22
+      }
     });
- 
+
     component = renderer.create(
       <Provider store={store}>
         <App />
       </Provider>
     );
   });
- 
-  it('should render with given state from Redux store', () => {
-    expect(component.toJSON().toMatchSnapshot());
-  });
- 
-  it('should dispatch an action on button click', () => {
-    renderer.act(() => {
-      component.root.findByType('button').props.onClick();
-    });
- 
-    expect(store.dispatch).toHaveBeenCalledTimes(1);
-    expect(store.dispatch).toHaveBeenCalledWith(
-      myAction({ payload: 'sample text' })
+
+  test('renders learn react link', () => {
+    const { getByText } = render(
+      <Provider store={store}>
+        <App />
+      </Provider>
     );
+  
+    expect(getByText(/Clock Synchronization Challenge/i)).toBeInTheDocument();
   });
+
+  
 })
 // test, when changing value somewhere, it's dispatching the info
 // update one component,
