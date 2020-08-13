@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4a31dd39c0826501827b6eccc23c0267",
+    "revision": "9867d3fda9d553aabd03d9b0b5bf7d63",
     "url": "/synchronized-clocks/index.html"
   },
   {
-    "revision": "46e4989376cf940c2978",
+    "revision": "c460acbc877ec77da000",
     "url": "/synchronized-clocks/static/css/main.020b5704.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/synchronized-clocks/static/js/2.90dc707f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "46e4989376cf940c2978",
-    "url": "/synchronized-clocks/static/js/main.a63dca00.chunk.js"
+    "revision": "c460acbc877ec77da000",
+    "url": "/synchronized-clocks/static/js/main.697cac74.chunk.js"
   },
   {
     "revision": "3d14ac4f6e416540b521",

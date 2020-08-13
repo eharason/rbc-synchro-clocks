@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/synchronized-clocks/static/css/main.020b5704.chunk.css",
-    "main.js": "/synchronized-clocks/static/js/main.a63dca00.chunk.js",
-    "main.js.map": "/synchronized-clocks/static/js/main.a63dca00.chunk.js.map",
+    "main.js": "/synchronized-clocks/static/js/main.697cac74.chunk.js",
+    "main.js.map": "/synchronized-clocks/static/js/main.697cac74.chunk.js.map",
     "runtime-main.js": "/synchronized-clocks/static/js/runtime-main.0c3d105a.js",
     "runtime-main.js.map": "/synchronized-clocks/static/js/runtime-main.0c3d105a.js.map",
     "static/js/2.90dc707f.chunk.js": "/synchronized-clocks/static/js/2.90dc707f.chunk.js",
     "static/js/2.90dc707f.chunk.js.map": "/synchronized-clocks/static/js/2.90dc707f.chunk.js.map",
     "index.html": "/synchronized-clocks/index.html",
-    "precache-manifest.593193655d72fd960e1a371c5c0d9c27.js": "/synchronized-clocks/precache-manifest.593193655d72fd960e1a371c5c0d9c27.js",
+    "precache-manifest.a87327f4456b924c6eae0a4414e34fe0.js": "/synchronized-clocks/precache-manifest.a87327f4456b924c6eae0a4414e34fe0.js",
     "service-worker.js": "/synchronized-clocks/service-worker.js",
     "static/css/main.020b5704.chunk.css.map": "/synchronized-clocks/static/css/main.020b5704.chunk.css.map",
     "static/js/2.90dc707f.chunk.js.LICENSE.txt": "/synchronized-clocks/static/js/2.90dc707f.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.0c3d105a.js",
     "static/js/2.90dc707f.chunk.js",
     "static/css/main.020b5704.chunk.css",
-    "static/js/main.a63dca00.chunk.js"
+    "static/js/main.697cac74.chunk.js"
   ]
 }
