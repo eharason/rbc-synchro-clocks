@@ -9,6 +9,8 @@ You can view the hosted solution here: https://eharason.github.io/synchronized-c
 - [x] When the time on one clock is adjusted, the time on the other clock should be automatically synchronized.
 - [x] Please have 1 analog clock face and 1 digital clock face.
 
+### Things I considered:
+
 - Please pay attention to the look and feel of the clocks as well as their functionality.
 - [x] The digital clock should move as time elapses. ~~It would also be a nice to have if the analog clock does the same.~~
 - Please consider writing some tests as part of the solution but complete coverage is not necessary.
