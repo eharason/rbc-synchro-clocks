@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rbc-synchro-clocks/static/css/main.020b5704.chunk.css",
+    "main.js": "/rbc-synchro-clocks/static/js/main.d26ff37a.chunk.js",
+    "main.js.map": "/rbc-synchro-clocks/static/js/main.d26ff37a.chunk.js.map",
+    "runtime-main.js": "/rbc-synchro-clocks/static/js/runtime-main.b87081cc.js",
+    "runtime-main.js.map": "/rbc-synchro-clocks/static/js/runtime-main.b87081cc.js.map",
+    "static/js/2.90dc707f.chunk.js": "/rbc-synchro-clocks/static/js/2.90dc707f.chunk.js",
+    "static/js/2.90dc707f.chunk.js.map": "/rbc-synchro-clocks/static/js/2.90dc707f.chunk.js.map",
+    "index.html": "/rbc-synchro-clocks/index.html",
+    "precache-manifest.f7d5fd1c7f9f7b4622b12f780e74ea99.js": "/rbc-synchro-clocks/precache-manifest.f7d5fd1c7f9f7b4622b12f780e74ea99.js",
+    "service-worker.js": "/rbc-synchro-clocks/service-worker.js",
+    "static/css/main.020b5704.chunk.css.map": "/rbc-synchro-clocks/static/css/main.020b5704.chunk.css.map",
+    "static/js/2.90dc707f.chunk.js.LICENSE.txt": "/rbc-synchro-clocks/static/js/2.90dc707f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b87081cc.js",
+    "static/js/2.90dc707f.chunk.js",
+    "static/css/main.020b5704.chunk.css",
+    "static/js/main.d26ff37a.chunk.js"
+  ]
+}
