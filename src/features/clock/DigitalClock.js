@@ -20,13 +20,13 @@ const useStyles = makeStyles({
         color: 'red',
         fontFamily: 'Courier',
         fontSize: "100px",
-        width: "155px"
+        maxWidth: "155px"
     },
     digitalColon: {
         color: 'red',
         fontFamily: 'Courier',
         fontSize: "100px",
-        width: "55px"
+        maxWidth: "55px"
     }
 });
 
